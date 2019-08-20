@@ -90,7 +90,7 @@ describe('react-lottie', () => {
       });
     });
 
-    describe('componentWillUpdate', () => {
+    describe('UNSAFE_componentWillUpdate', () => {
       it('should register events when animationData changes', () => {
         const registerEventsSpy = sinon.stub();
         const component = mount(<ReactLottie options={defaultOptions} />);
